@@ -116,24 +116,76 @@ nav a {
     color: #333; /* You can choose any color here */
     font-weight: 500;
     font-size: 16px; /* Adjust font size as needed */
-    transition: color 0.3s ease; /* Smooth hover transition */
 }
 
 nav a:hover {
-    color: #007BFF; /* Change color on hover (pick your preferred color) */
+    color: darkred; /* Change color on hover (pick your preferred color) */
 }
 
 nav a:active {
-    color: #0056b3; /* Darker color when active/clicked */
+    color: darkred; /* Darker color when active/clicked */
 }
 
 h2 {
-    font-family: 'Lucida Sans Unicode';
-    font-size: 32px; /* Adjust the size of the headers */
-    font-weight: 600; /* Make the headers bold */
-    color: #333; /* Customize the text color */
-    text-align: left; /* Center the text */
-    padding: 10px 0; /* Add padding above and below */
-    border-bottom: 2px solid black; /* Add an underline with color */
-    margin-bottom: 30px; /* Space between header and content */
+    font-family: 'Arial', sans-serif; /* Customize the font */
+    font-size: 64px; /* Make the text large */
+    font-weight: 700; /* Make the text bold */
+    color: transparent; /* Make the text color transparent */
+    -webkit-text-stroke: 2px darkred; /* Add an outline to the text */
+    text-align: center; /* Center the text */
+    letter-spacing: 2px; /* Add some space between letters */
+    margin: 20px 0; /* Adjust margins */
+}
+
+h2::selection {
+    background-color: transparent; /* Prevent background color when selecting text */
+}
+
+.carousel {
+    display: flex;
+    position: relative;
+    max-width: 100%; /* Full width of the section */
+    overflow: hidden; /* Hides overflow */
+}
+
+.carousel-images {
+    display: flex; /* Aligns images in a row */
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+}
+
+.carousel img {
+    max-width: 100%; /* Ensures images fit the container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; /* Ensure buttons are on top */
+}
+
+button.prev {
+    left: 10px; /* Position for previous button */
+}
+
+button.next {
+    right: 10px; /* Position for next button */
+}
+
+.quotation-entry {
+    text-align: left;
+}
+
+.quotation-exit {
+    text-align: right;
+}
+
+.quotation-entry, .quotation-exit {
+    font-weight: bolder;
+    font-style: italic;
 }
