@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+header {
+    font-family: 'Lucida Sans Unicode';
+    font-weight: lighter;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    padding: 20px;
+    z-index: 1000;
+    max-width: max-content;
+}
+
+.story {
+    font-size: larger;
+}
+
+.content {
+    position: relative;
+    z-index: 100;
+}
+
+.date {
+    font-style: italic;
+}
+
+.quote {
+    font-style: italic;
+    background-color: black;
+    color:white;
+    padding: 5px 5px; 
+    border-radius: 3px; 
+    font-size: 12px; 
+    font-weight: bold; 
+    margin: 0px; 
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.skills {
+    text-align: right;
+}
+
+#background-video {
+    position: relative;
+    overflow-y: auto;
+    height: 100vh;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#background-video::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    margin-left: 50%;
+    min-height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: right; /* Centers content horizontally */
+}
+
+.skill {
+    display: inline-block;
+    background-color: black;
+    color:white;
+    padding: 6px 8px; 
+    border-radius: 15px; 
+    font-size: 12px; 
+    font-weight: bold; 
+    margin: 7px; 
+    text-align: center; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+}
+
+.skill:hover {
+    background-color: darkred; 
+}
+
+
+/* Reset list style */
+nav ul {
+    list-style-type: none; /* Removes the bullets (*) */
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Centers the navigation items */
+    gap: 10px; /* Adds space between each menu item */
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* You can choose any color here */
+    font-weight: 500;
+    font-size: 16px; /* Adjust font size as needed */
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+nav a:hover {
+    color: #007BFF; /* Change color on hover (pick your preferred color) */
+}
+
+nav a:active {
+    color: #0056b3; /* Darker color when active/clicked */
+}
+
+h2 {
+    font-family: 'Lucida Sans Unicode';
+    font-size: 32px; /* Adjust the size of the headers */
+    font-weight: 600; /* Make the headers bold */
+    color: #333; /* Customize the text color */
+    text-align: left; /* Center the text */
+    padding: 10px 0; /* Add padding above and below */
+    border-bottom: 2px solid black; /* Add an underline with color */
+    margin-bottom: 30px; /* Space between header and content */
+}
