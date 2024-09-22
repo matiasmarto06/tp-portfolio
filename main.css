@@ -165,7 +165,7 @@ h2::selection {
 .carousel img {
     border-radius: 10px;
     max-width: 100%;
-    height: fit-content;
+    height: min-content;
 }
 
 button.prev, button.next {
