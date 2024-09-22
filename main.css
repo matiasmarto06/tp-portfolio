@@ -155,19 +155,17 @@ h2::selection {
     position: relative;
     max-width: 100%;
     overflow: hidden;
-    min-height: min-content;
 }
 
 .carousel-images {
     display: flex;
     transition: transform 0.5s ease;
-    height: min-content;
 }
 
 .carousel img {
     border-radius: 10px;
     max-width: 100%;
-    height: min-content;
+    height: max-content;
 }
 
 button.prev, button.next {
