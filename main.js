@@ -21,3 +21,20 @@ setInterval(() => {
     currentSlide++;
     showSlides();
 }, 3000);
+
+function validateEmail(email) {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]/;
+    return emailPattern.test(email);
+}
+
+function submitForm(){
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    if (name != "" && validateEmail(email) && subject != "" && message != "") {
+        alert("Muchas gracias " + name + "\n" + "¡Mensaje enviado! Se le responderá en la brevedad...");
+        // algo más... 
+    }
+}

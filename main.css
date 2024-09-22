@@ -6,6 +6,7 @@ body {
 
 header {
     font-family: 'Lucida Sans Unicode';
+    font-size: x-large;
     font-weight: lighter;
     position: fixed;
     top: 0;
@@ -74,9 +75,9 @@ section {
     min-height: 100vh;
     padding: 40px;
     display: flex;
-    flex-direction: column; /* Stacks items vertically */
-    justify-content: center; /* Centers content vertically */
-    align-items: right; /* Centers content horizontally */
+    flex-direction: column;
+    justify-content: center; 
+    align-items: right; 
 }
 
 .skill {
@@ -100,11 +101,11 @@ section {
 
 /* Reset list style */
 nav ul {
-    list-style-type: none; /* Removes the bullets (*) */
+    list-style-type: none; 
     padding: 0;
     margin: 0;
-    justify-content: center; /* Centers the navigation items */
-    gap: 10px; /* Adds space between each menu item */
+    justify-content: center;
+    gap: 10px;
 }
 
 nav li {
@@ -112,70 +113,78 @@ nav li {
 }
 
 nav a {
-    text-decoration: none; /* Removes underline from links */
-    color: #333; /* You can choose any color here */
-    font-weight: 500;
-    font-size: 16px; /* Adjust font size as needed */
+    text-decoration: none;
+    font-family: 'Lucida Sans Regular';
+    color:black;
+    font-weight: 550;
+    font-size: 20px;
 }
 
 nav a:hover {
-    color: darkred; /* Change color on hover (pick your preferred color) */
+    color: darkred;
 }
 
 nav a:active {
-    color: darkred; /* Darker color when active/clicked */
+    color: darkred;
+}
+
+h2, .title {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700; 
+    color: transparent; 
+    -webkit-text-stroke: 2px darkred; 
+    text-align: center; 
+    letter-spacing: 2px;
+    margin: 20px 0;
 }
 
 h2 {
-    font-family: 'Arial', sans-serif; /* Customize the font */
-    font-size: 64px; /* Make the text large */
-    font-weight: 700; /* Make the text bold */
-    color: transparent; /* Make the text color transparent */
-    -webkit-text-stroke: 2px darkred; /* Add an outline to the text */
-    text-align: center; /* Center the text */
-    letter-spacing: 2px; /* Add some space between letters */
-    margin: 20px 0; /* Adjust margins */
+    font-size: 64px;
+}
+
+.title {
+    font-size: 50px;
 }
 
 h2::selection {
-    background-color: transparent; /* Prevent background color when selecting text */
+    background-color: transparent;
 }
 
 .carousel {
     display: flex;
     position: relative;
-    max-width: 100%; /* Full width of the section */
-    overflow: hidden; /* Hides overflow */
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .carousel-images {
-    display: flex; /* Aligns images in a row */
-    transition: transform 0.5s ease; /* Smooth transition for sliding */
+    display: flex;
+    transition: transform 0.5s ease;
 }
 
 .carousel img {
     border-radius: 10px;
-    max-width: 100%; /* Ensures images fit the container */
-    height: auto; /* Maintains aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
 
 button.prev, button.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.7);
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 10; /* Ensure buttons are on top */
+    z-index: 10;
 }
 
 button.prev {
-    left: 10px; /* Position for previous button */
+    left: 10px;
 }
 
 button.next {
-    right: 10px; /* Position for next button */
+    right: 10px; 
 }
 
 .quotation-entry {
@@ -194,19 +203,19 @@ button.next {
 
 /* Styling for the contact form */
 form {
-    width: 100%; /* Take full width of the screen */
+    width: 100%; 
     margin: 0 auto;
     padding: 20px;
-    background-color: transparent; /* No background color */
-    border-radius: 0px; /* Remove border radius */
-    box-shadow: none; /* No shadow */
+    background-color: transparent; 
+    border-radius: 0px; 
+    box-shadow: none; 
 }
 
 form h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 24px;
-    color: black; /* Make the heading text white to fit a transparent background */
+    color: black;
 }
 
 .form-group {
@@ -218,25 +227,25 @@ form h2 {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: black; /* Label text color white */
+    color: black;
 }
 
 .form-group input, 
 .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid black; /* White border with transparency */
-    border-radius: 10px; /* Rounded corners */
+    border: 2px solid black;
+    border-radius: 10px;
     font-size: 16px;
-    background-color: transparent; /* Transparent background */
-    color: black; /* Text color white */
+    background-color: transparent;
+    color: black;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
 }
 
 .form-group input:focus, 
 .form-group textarea:focus {
-    border-color: darkred; /* Blue border when focused */
+    border-color: darkred;
     outline: none;
 }
 
@@ -244,7 +253,7 @@ button[type="submit"] {
     display: block;
     width: 100%;
     padding: 12px 20px;
-    background-color: darkred; /* Matching the navigation color */
+    background-color: darkred;
     color: white;
     font-weight: bold;
     border: none;
@@ -255,5 +264,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: darkred; /* Darker blue on hover */
+    background-color: darkred;
 }
